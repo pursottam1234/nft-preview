@@ -4,4 +4,13 @@
 }
 body{
     background-color: #0d1a2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigbox{
+    background:rgb(21, 39, 63);
+    height: 100px;
+    width: 50px;
 }
