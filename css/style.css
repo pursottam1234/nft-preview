@@ -22,10 +22,31 @@ body{
     padding: 10px;
     border-radius: 5%;
     max-width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.icon-hover{
+    position: absolute;
+    display: inline-block;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+ .icon-hover:hover{
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.3;
+    position: absolute;
+    max-width: 100%;
+    display: inline-block;
 }
 .bigbox h2{
     color: hsl(0, 0%, 100%);
     padding: 10px;
+}
+.bigbox h2:hover{
+    color: hsl(178, 100%, 50%);
 }
 .bigbox p{
     font-size: 18px;
@@ -59,4 +80,21 @@ body{
 .line hr{
     border-color: hsl(215, 51%, 70%);
     margin: 10px;
+}
+.creation{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.creation p{
+    font-size: 18px;
+}
+.creation img{
+    height: 30px;
+}
+.creation span {
+    color:hsl(0, 0%, 100%);
+}
+.creation span:hover{
+   color: rgb(26, 177, 184);
 }
